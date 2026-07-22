@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environment
+venv/
+.env/
+.env
+.env.*
+
+# dbt
+dbt.log
+target/
+logs/
+.dbt/
+dbt_packages/
+
+# Airflow
+airflow/logs/
+airflow/__pycache__/
+
+# VS Code
+.vscode/
+
+# Local templates
+*.template
+
+# OS
+.DS_Store
+
+# Secrets
+.user.yml
+
+# Local database files
+postgres/data/
+*.db
+*.sqlite
+*.sqlite3
