@@ -1,0 +1,57 @@
+[
+  {
+    "vehicle_id": "EV-1001",
+    "model": "Transit Van Standard",
+    "region": "Northeast",
+    "city": "New York",
+    "battery_kwh": 78.0,
+    "rated_efficiency_kwh_per_100km": 19.8,
+    "observed_efficiency_kwh_per_100km": 23.4,
+    "odometer_km": 28450,
+    "operating_date": "2026-07-26"
+  },
+  {
+    "vehicle_id": "EV-1002",
+    "model": "Transit Van Long Range",
+    "region": "Midwest",
+    "city": "Detroit",
+    "battery_kwh": 98.0,
+    "rated_efficiency_kwh_per_100km": 21.5,
+    "observed_efficiency_kwh_per_100km": 28.2,
+    "odometer_km": 31400,
+    "operating_date": "2026-07-26"
+  },
+  {
+    "vehicle_id": "EV-1003",
+    "model": "Delivery Compact",
+    "region": "South",
+    "city": "Austin",
+    "battery_kwh": 62.0,
+    "rated_efficiency_kwh_per_100km": 16.6,
+    "observed_efficiency_kwh_per_100km": 17.1,
+    "odometer_km": 19750,
+    "operating_date": "2026-07-26"
+  },
+  {
+    "vehicle_id": "EV-1004",
+    "model": "Delivery Compact",
+    "region": "West",
+    "city": "Fremont",
+    "battery_kwh": 62.0,
+    "rated_efficiency_kwh_per_100km": 16.6,
+    "observed_efficiency_kwh_per_100km": 18.4,
+    "odometer_km": 22600,
+    "operating_date": "2026-07-26"
+  },
+  {
+    "vehicle_id": "EV-1005",
+    "model": "Transit Van Standard",
+    "region": "Canada",
+    "city": "Toronto",
+    "battery_kwh": 78.0,
+    "rated_efficiency_kwh_per_100km": 19.8,
+    "observed_efficiency_kwh_per_100km": 27.7,
+    "odometer_km": 33120,
+    "operating_date": "2026-07-26"
+  }
+]

@@ -1,16 +1,47 @@
 version: 2
 
 sources:
-  - name: dev
+  - name: raw
     database: "{{ env_var('DB_NAME', 'my_weather_db') }}"
+    schema: raw
     tables:
-      - name: raw_weather_data
+      - name: weather_api_responses
+        loaded_at_field: fetched_at
+        freshness:
+          warn_after:
+            count: 36
+            period: hour
+          error_after:
+            count: 72
+            period: hour
         columns:
           - name: id
+            tests:
+              - not_null
+              - unique
+          - name: location_query
+            tests:
+              - not_null
+          - name: payload
+            tests:
+              - not_null
+          - name: fetched_at
+            tests:
+              - not_null
+          - name: payload_hash
+            tests:
+              - not_null
+              - unique
+      - name: ev_fleet_records
+        loaded_at_field: loaded_at
+        columns:
+          - name: vehicle_id
+            tests:
+              - not_null
+              - unique
           - name: city
-          - name: temperature
-          - name: weather_description
-          - name: wind_speed
-          - name: time
-          - name: inserted_at
-          - name: utc_offset
+            tests:
+              - not_null
+          - name: observed_efficiency_kwh_per_100km
+            tests:
+              - not_null

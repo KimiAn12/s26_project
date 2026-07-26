@@ -1,0 +1,20 @@
+select
+    vehicle_id,
+    model,
+    region,
+    city,
+    operating_date,
+    temperature_c,
+    temperature_band,
+    weather_description,
+    wind_speed_kph,
+    humidity_pct,
+    precipitation_mm,
+    battery_kwh,
+    rated_efficiency_kwh_per_100km,
+    observed_efficiency_kwh_per_100km,
+    efficiency_delta_kwh_per_100km,
+    efficiency_penalty_pct,
+    estimated_range_km,
+    operational_risk_label
+from {{ ref('int_ev_weather_joined') }}
